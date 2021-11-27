@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
+use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ORM\Entity(repositoryClass=UsersRepository::class)
  */
-class User
+class Users
 {
     /**
      * @ORM\Id
@@ -23,7 +23,7 @@ class User
     private $Nom;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $Prenom;
 
@@ -31,11 +31,6 @@ class User
      * @ORM\Column(type="integer")
      */
     private $Cin;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $tel;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -64,7 +59,7 @@ class User
         return $this->Prenom;
     }
 
-    public function setPrenom(?string $Prenom): self
+    public function setPrenom(string $Prenom): self
     {
         $this->Prenom = $Prenom;
 
@@ -79,18 +74,6 @@ class User
     public function setCin(int $Cin): self
     {
         $this->Cin = $Cin;
-
-        return $this;
-    }
-
-    public function getTel(): ?int
-    {
-        return $this->tel;
-    }
-
-    public function setTel(int $tel): self
-    {
-        $this->tel = $tel;
 
         return $this;
     }

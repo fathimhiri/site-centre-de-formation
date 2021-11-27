@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\SessionRepository;
+use App\Repository\CandidatRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=SessionRepository::class)
+ * @ORM\Entity(repositoryClass=CandidatRepository::class)
  */
-class Session
+class Candidat
 {
     /**
      * @ORM\Id

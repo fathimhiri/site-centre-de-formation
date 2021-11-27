@@ -18,9 +18,9 @@ class Admin
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $name;
+    private $Nom;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -30,26 +30,26 @@ class Admin
     /**
      * @ORM\Column(type="integer")
      */
-    private $cin;
+    private $Cin;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="integer")
      */
-    private $phone;
+    private $Tél;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getName(): ?string
+    public function getNom(): ?string
     {
-        return $this->name;
+        return $this->Nom;
     }
 
-    public function setName(string $name): self
+    public function setNom(?string $Nom): self
     {
-        $this->name = $name;
+        $this->Nom = $Nom;
 
         return $this;
     }
@@ -68,24 +68,24 @@ class Admin
 
     public function getCin(): ?int
     {
-        return $this->cin;
+        return $this->Cin;
     }
 
-    public function setCin(int $cin): self
+    public function setCin(int $Cin): self
     {
-        $this->cin = $cin;
+        $this->Cin = $Cin;
 
         return $this;
     }
 
-    public function getPhone(): ?int
+    public function getTél(): ?int
     {
-        return $this->phone;
+        return $this->Tél;
     }
 
-    public function setPhone(?int $phone): self
+    public function setTél(int $Tél): self
     {
-        $this->phone = $phone;
+        $this->Tél = $Tél;
 
         return $this;
     }

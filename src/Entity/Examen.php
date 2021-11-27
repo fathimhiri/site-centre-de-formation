@@ -17,8 +17,25 @@ class Examen
      */
     private $id;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $Libellé;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getLibellé(): ?string
+    {
+        return $this->Libellé;
+    }
+
+    public function setLibellé(string $Libellé): self
+    {
+        $this->Libellé = $Libellé;
+
+        return $this;
     }
 }
