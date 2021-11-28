@@ -22,6 +22,11 @@ class EtatDePresence
      */
     private $Date;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $Session;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +40,18 @@ class EtatDePresence
     public function setDate(\DateTimeInterface $Date): self
     {
         $this->Date = $Date;
+
+        return $this;
+    }
+
+    public function getSession(): ?int
+    {
+        return $this->Session;
+    }
+
+    public function setSession(int $Session): self
+    {
+        $this->Session = $Session;
 
         return $this;
     }

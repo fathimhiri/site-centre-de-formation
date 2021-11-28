@@ -18,7 +18,7 @@ class Formation
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $Libellé;
 
@@ -32,7 +32,7 @@ class Formation
         return $this->Libellé;
     }
 
-    public function setLibellé(string $Libellé): self
+    public function setLibellé(?string $Libellé): self
     {
         $this->Libellé = $Libellé;
 

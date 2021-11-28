@@ -20,21 +20,21 @@ class Document
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $NomDoc;
+    private $Titre;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNomDoc(): ?string
+    public function getTitre(): ?string
     {
-        return $this->NomDoc;
+        return $this->Titre;
     }
 
-    public function setNomDoc(string $NomDoc): self
+    public function setTitre(string $Titre): self
     {
-        $this->NomDoc = $NomDoc;
+        $this->Titre = $Titre;
 
         return $this;
     }
