@@ -1,12 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 
-        
-        <!DOCTYPE html>
-<html>
-    <head>
-        {% block head %}
-            <link rel="stylesheet" href="style.css"/>
-            <title>{% block title %}centre de formation{% endblock %}</title>
-            <!-- META ============================================= -->
+<head>
+
+	<!-- META ============================================= -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" />
@@ -21,13 +18,13 @@
 	<meta property="og:description" content="EduChamp : Education HTML Template" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-
-
-            {% block stylesheets %}
-         <!-- FAVICONS ICON ============================================= -->
+	
+	<!-- FAVICONS ICON ============================================= -->
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>EduChamp : Education HTML Template </title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,35 +35,24 @@
 	<![endif]-->
 	
 	<!-- All PLUGINS CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/assets.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
 	
 	<!-- TYPOGRAPHY ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/typography.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
 	
 	<!-- SHORTCODES ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/shortcodes/shortcodes.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
 	
 	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
-	<link class="skin" rel="stylesheet" type="text/css" href="{{asset('assets/css/color/color-1.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 	
-	<!-- REVOLUTION SLIDER CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/layers.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/settings.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/navigation.css')}}">
-	<!-- REVOLUTION SLIDER END -->	
-            {% endblock %}
-        {% endblock %}
-    </head>
-
-
-    <body>
+</head>
+<body id="bg">
 <div class="page-wraper">
-<div id="loading-icon-bx"></div>
+	<div id="loading-icon-bx"></div>
     <!-- Header Top ==== -->
-      {% block header %}
-         
-    <header class="header rs-nav header-transparent">
+    <header class="header rs-nav">
 		<div class="top-bar">
 			<div class="container">
 				<div class="row d-flex justify-content-between">
@@ -96,7 +82,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+						<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,16 +118,16 @@
                         <ul class="nav navbar-nav">	
 							<li class="active"><a href="javascript:;">Home <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="{{ path('home1') }}">Home 1</a></li>
-									<li><a href="{{ path('home2') }}">Home 2</a></li>
+									<li><a href="index.html">Home 1</a></li>
+									<li><a href="index-2.html">Home 2</a></li>
 								</ul>
 							</li>
 							<li><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
 									<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
 										<ul class="sub-menu">
-											<li><a href="{{ path('about1') }}">About 1</a></li>
-											<li><a href="{{ path('about2') }}">About 2</a></li>
+											<li><a href="about-1.html">About 1</a></li>
+											<li><a href="about-2.html">About 2</a></li>
 										</ul>
 									</li>
 									<li><a href="javascript:;">Event<i class="fa fa-angle-right"></i></a>
@@ -230,28 +216,255 @@
             </div>
         </div>
     </header>
-    
-         {% endblock %} 
-         </div>
-          
-         <!-- Header Top END ==== -->
-
-
-
-
-
-
-
-
-
-        
-        {% block body %}
-         
-         {% endblock %} 
-
-
-        {% block footer %}
-         <!-- Footer ==== -->
+    <!-- header END ==== -->
+    <!-- Inner Content Box ==== -->
+    <div class="page-content bg-white">
+        <!-- Page Heading Box ==== -->
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner3.jpg);">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">About Us 2</h1>
+				 </div>
+            </div>
+        </div>
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>About Us 2</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page Heading Box END ==== -->
+        <!-- Page Content Box ==== -->
+		<div class="content-block">
+            <!-- About Us ==== -->
+			<div class="section-area section-sp1">
+                <div class="container">
+					 <div class="row">
+						 <div class="col-lg-6 m-b30">
+							<h2 class="title-head ">Learn a new skill online<br/> <span class="text-primary"> on your time</span></h2>
+							<h4><span class="counter">57,000 </span> Online Courses</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+							<a href="#" class="btn button-md">Join Now</a>
+						 </div>
+						 <div class="col-lg-6">
+							 <div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="assets/images/icon/icon1.png" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Our Philosophy</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="assets/images/icon/icon2.png" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Kingster's Principle</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="assets/images/icon/icon3.png" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Key Of Success</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="assets/images/icon/icon4.png" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Our Philosophy</h5>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!-- About Us END ==== -->
+			<!-- Why Choose ==== -->
+			<div class="section-area bg-gray section-sp2 choose-bx">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 heading-bx text-center">
+							<h2 class="title-head text-uppercase m-b0">Why Choose <span> Our Institution</span></h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+						</div>
+					</div>
+					<div class="row choose-bx-in">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="service-bx">
+								<div class="action-box">
+									<img src="assets/images/our-services/pic1.jpg" alt="">
+								</div>
+								<div class="info-bx text-center">
+									<div class="feature-box-sm radius bg-white">
+										<i class="fa fa-bank text-primary"></i>
+									</div>
+									<h4><a href="#">Best Industry Leaders</a></h4>
+									<a href="#" class="btn radius-xl">View More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="service-bx">
+								<div class="action-box">
+									<img src="assets/images/our-services/pic2.jpg" alt="">
+								</div>
+								<div class="info-bx text-center">
+									<div class="feature-box-sm radius bg-white">
+										<i class="fa fa-book text-primary"></i>
+									</div>
+									<h4><a href="#">Learn Courses Online</a></h4>
+									<a href="#" class="btn radius-xl">View More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="service-bx m-b0">
+								<div class="action-box">
+									<img src="assets/images/our-services/pic3.jpg" alt="">
+								</div>
+								<div class="info-bx text-center">
+									<div class="feature-box-sm radius bg-white">
+										<i class="fa fa-file-text-o text-primary"></i>
+									</div>
+									<h4><a href="#">Book Library & Store</a></h4>
+									<a href="#" class="btn radius-xl">View More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Why Choose END ==== -->
+			<!-- Company Status ==== -->
+			<div class="section-area content-inner section-sp1">
+                <div class="container">
+                    <div class="section-content">
+                         <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+                                    <div class="text-primary">
+										<span class="counter">3000</span><span>+</span>
+									</div>
+									<span class="counter-text">Completed Projects</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-black">
+										<span class="counter">2500</span><span>+</span>
+									</div>
+									<span class="counter-text">Happy Clients</span>
+								</div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-primary">
+										<span class="counter">1500</span><span>+</span>
+									</div>
+									<span class="counter-text">Questions Answered</span>
+								</div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+                                <div class="counter-style-1">
+									<div class="text-black">
+										<span class="counter">1000</span><span>+</span>
+									</div>
+									<span class="counter-text">Ordered Coffee's</span>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- Company Stats END ==== -->
+			<!-- Our Story ==== -->
+			<div class="section-area bg-gray section-sp1 our-story">
+				<div class="container">
+					<div class="row align-items-center d-flex">
+						<div class="col-lg-5 col-md-12 heading-bx">
+							<h2 class="m-b10">Our Story</h2>
+							<h5 class="fw4">It is a long established fact that a reade.</h5>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+							<a href="#" class="btn">Read More</a>
+						</div>
+						<div class="col-lg-7 col-md-12 heading-bx p-lr">
+							<div class="video-bx">
+								<img src="assets/images/about/pic1.jpg" alt=""/>
+								<a href="https://www.youtube.com/watch?v=x_sJzVe9P_8" class="popup-youtube video"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Our Story END ==== -->
+			<!-- Testimonials ==== -->
+			<div class="section-area section-sp2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 heading-bx left">
+							<h2 class="title-head text-uppercase">what people <span>say</span></h2>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						</div>
+					</div>
+					<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="assets/images/testimonials/pic1.jpg" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Peter Packer</h5>
+									<p>-Art Director</p>
+								</div>
+								<div class="testimonial-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="assets/images/testimonials/pic2.jpg" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Peter Packer</h5>
+									<p>-Art Director</p>
+								</div>
+								<div class="testimonial-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Testimonials END ==== -->
+        </div>
+		<!-- Page Content Box END ==== -->
+    </div>
+	<!-- Page Content Box END ==== -->
+	<!-- Footer ==== -->
     <footer>
         <div class="footer-top">
 			<div class="pt-exebar">
@@ -356,142 +569,25 @@
             </div>
         </div>
     </footer>
-    
-         {% endblock %}
-         <!-- Footer END ==== -->
-         <button class="back-to-top fa fa-chevron-up" ></button>
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
-         
-          {% block javascripts %}
-         <!-- External JavaScripts -->
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap/js/popper.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap-select/bootstrap-select.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js')}}"></script>
-<script src="{{asset('assets/vendors/magnific-popup/magnific-popup.js')}}"></script>
-<script src="{{asset('assets/vendors/counter/waypoints-min.js')}}"></script>
-<script src="{{asset('assets/vendors/counter/counterup.min.js')}}"></script>
-<script src="{{asset('assets/vendors/imagesloaded/imagesloaded.js')}}"></script>
-<script src="{{asset('assets/vendors/masonry/masonry.js')}}"></script>
-<script src="{{asset('assets/vendors/masonry/filter.js')}}"></script>
-<script src="{{asset('assets/vendors/owl-carousel/owl.carousel.js')}}"></script>
-<script src="{{asset('assets/js/functions.js')}}"></script>
-<script src="{{asset('assets/js/contact.js')}}"></script>
-<script src='{{asset('assets/vendors/switcher/switcher.js')}}'></script>
-<!-- Revolution JavaScripts Files -->
-<script src="{{asset('assets/vendors/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
-<script>
-jQuery(document).ready(function() {
-	var ttrevapi;
-	var tpj =jQuery;
-	if(tpj("#rev_slider_486_1").revolution == undefined){
-		revslider_showDoubleJqueryError("#rev_slider_486_1");
-	}else{
-		ttrevapi = tpj("#rev_slider_486_1").show().revolution({
-			sliderType:"standard",
-			jsFileLocation:"assets/vendors/revolution/js/",
-			sliderLayout:"fullwidth",
-			dottedOverlay:"none",
-			delay:9000,
-			navigation: {
-				keyboardNavigation:"on",
-				keyboard_direction: "horizontal",
-				mouseScrollNavigation:"off",
-				mouseScrollReverse:"default",
-				onHoverStop:"on",
-				touch:{
-					touchenabled:"on",
-					swipe_threshold: 75,
-					swipe_min_touches: 1,
-					swipe_direction: "horizontal",
-					drag_block_vertical: false
-				}
-				,
-				arrows: {
-					style: "uranus",
-					enable: true,
-					hide_onmobile: false,
-					hide_onleave: false,
-					tmp: '',
-					left: {
-						h_align: "left",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					},
-					right: {
-						h_align: "right",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					}
-				},
-				
-			},
-			viewPort: {
-				enable:true,
-				outof:"pause",
-				visible_area:"80%",
-				presize:false
-			},
-			responsiveLevels:[1240,1024,778,480],
-			visibilityLevels:[1240,1024,778,480],
-			gridwidth:[1240,1024,778,480],
-			gridheight:[768,600,600,600],
-			lazyType:"none",
-			parallax: {
-				type:"scroll",
-				origo:"enterpoint",
-				speed:400,
-				levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
-				type:"scroll",
-			},
-			shadow:0,
-			spinner:"off",
-			stopLoop:"off",
-			stopAfterLoops:-1,
-			stopAtSlide:-1,
-			shuffle:"off",
-			autoHeight:"off",
-			hideThumbsOnMobile:"off",
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			debugMode:false,
-			fallbacks: {
-				simplifyAll:"off",
-				nextSlideOnWindowFocus:"off",
-				disableFocusListener:false,
-			}
-		});
-	}
-});	
-</script>
-        {% endblock %} 
-    </body>
-   
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src='assets/vendors/switcher/switcher.js'></script>
+</body>
+
 </html>
-        
-        
-        
-        
-  
-    
-
-     
-
-         
-            
-   
