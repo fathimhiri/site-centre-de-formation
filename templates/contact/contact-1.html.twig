@@ -1,12 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
 
-        
-        <!DOCTYPE html>
-<html>
-    <head>
-        {% block head %}
-            <link rel="stylesheet" href="style.css"/>
-            <title>{% block title %}centre de formation{% endblock %}</title>
-            <!-- META ============================================= -->
+<head>
+
+	<!-- META ============================================= -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" />
@@ -21,13 +18,13 @@
 	<meta property="og:description" content="EduChamp : Education HTML Template" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-
-
-            {% block stylesheets %}
-         <!-- FAVICONS ICON ============================================= -->
+	
+	<!-- FAVICONS ICON ============================================= -->
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>EduChamp : Education HTML Template </title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,35 +35,25 @@
 	<![endif]-->
 	
 	<!-- All PLUGINS CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/assets.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
 	
 	<!-- TYPOGRAPHY ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/typography.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/typography.css">
 	
 	<!-- SHORTCODES ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/shortcodes/shortcodes.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
 	
 	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
-	<link class="skin" rel="stylesheet" type="text/css" href="{{asset('assets/css/color/color-1.css')}}">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 	
-	<!-- REVOLUTION SLIDER CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/layers.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/settings.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/revolution/css/navigation.css')}}">
-	<!-- REVOLUTION SLIDER END -->	
-            {% endblock %}
-        {% endblock %}
-    </head>
-
-
-    <body>
+</head>
+<body id="bg">
 <div class="page-wraper">
 <div id="loading-icon-bx"></div>
+
     <!-- Header Top ==== -->
-      {% block header %}
-         
-    <header class="header rs-nav header-transparent">
+    <header class="header rs-nav">
 		<div class="top-bar">
 			<div class="container">
 				<div class="row d-flex justify-content-between">
@@ -96,7 +83,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
+						<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,40 +119,40 @@
                         <ul class="nav navbar-nav">	
 							<li class="active"><a href="javascript:;">Home <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="{{ path('home1') }}">Home 1</a></li>
-									<li><a href="{{ path('home2') }}">Home 2</a></li>
+									<li><a href="index.html">Home 1</a></li>
+									<li><a href="index-2.html">Home 2</a></li>
 								</ul>
 							</li>
 							<li><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
 									<li><a href="javascript:;">About<i class="fa fa-angle-right"></i></a>
 										<ul class="sub-menu">
-											<li><a href="{{ path('about1') }}">About 1</a></li>
-											<li><a href="{{ path('about2') }}">About 2</a></li>
+											<li><a href="about-1.html">About 1</a></li>
+											<li><a href="about-2.html">About 2</a></li>
 										</ul>
 									</li>
 									<li><a href="javascript:;">Event<i class="fa fa-angle-right"></i></a>
 										<ul class="sub-menu">
-											<li><a href="{{ path('event') }}">Event</a></li>
-											<li><a href="{{ path('eventdetails') }}">Events Details</a></li>
+											<li><a href="event.html">Event</a></li>
+											<li><a href="events-details.html">Events Details</a></li>
 										</ul>
 									</li>
 									<li><a href="javascript:;">FAQ's<i class="fa fa-angle-right"></i></a>
 										<ul class="sub-menu">
-											<li><a href="{{ path('faq1') }}">FAQ's 1</a></li>
-											<li><a href="{{ path('faq2') }}">FAQ's 2</a></li>
+											<li><a href="faq-1.html">FAQ's 1</a></li>
+											<li><a href="faq-2.html">FAQ's 2</a></li>
 										</ul>
 									</li>
 									<li><a href="javascript:;">Contact Us<i class="fa fa-angle-right"></i></a>
 										<ul class="sub-menu">
-											<li><a href="{{ path('contact1') }}">Contact Us 1</a></li>
-											<li><a href="{{ path('contact2') }}">Contact Us 2</a></li>
+											<li><a href="contact-1.html">Contact Us 1</a></li>
+											<li><a href="contact-2.html">Contact Us 2</a></li>
 										</ul>
 									</li>
-									<li><a href="{{ path('portfolio') }}">Portfolio</a></li>
-									<li><a href="{{ path('profile') }}">Profile</a></li>
-									<li><a href="{{ path('mem') }}">Membership</a></li>
-									<li><a href="{{ path('err') }}">404 Page</a></li>
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="profile.html">Profile</a></li>
+									<li><a href="membership.html">Membership</a></li>
+									<li><a href="error-404.html">404 Page</a></li>
 								</ul>
 							</li>
 							<li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
@@ -173,11 +160,11 @@
 									<li class="add-menu-left">
 										<h5 class="menu-adv-title">Our Courses</h5>
 										<ul>
-											<li><a href="{{ path('courses') }}">Courses </a></li>
-											<li><a href="{{ path('coursde') }}">Courses Details</a></li>
-											<li><a href="{{ path('profile') }}">Instructor Profile</a></li>
-											<li><a href="{{ path('event') }}">Upcoming Event</a></li>
-											<li><a href="{{ path('mem') }}">Membership</a></li>
+											<li><a href="courses.html">Courses </a></li>
+											<li><a href="courses-details.html">Courses Details</a></li>
+											<li><a href="profile.html">Instructor Profile</a></li>
+											<li><a href="event.html">Upcoming Event</a></li>
+											<li><a href="membership.html">Membership</a></li>
 										</ul>
 									</li>
 									<li class="add-menu-right">
@@ -187,11 +174,11 @@
 							</li>
 							<li><a href="javascript:;">Blog <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-									<li><a href="{{ path('blog') }}">Blog Classic</a></li>
-									<li><a href="{{ path('blogcs') }}">Blog Classic Sidebar</a></li>
-									<li><a href="{{ path('blogl') }}">Blog List Sidebar</a></li>
-									<li><a href="{{ path('blogst') }}">Blog Standard Sidebar</a></li>
-									<li><a href="{{ path('blogd') }}">Blog Details</a></li>
+									<li><a href="blog-classic-grid.html">Blog Classic</a></li>
+									<li><a href="blog-classic-sidebar.html">Blog Classic Sidebar</a></li>
+									<li><a href="blog-list-sidebar.html">Blog List Sidebar</a></li>
+									<li><a href="blog-standard-sidebar.html">Blog Standard Sidebar</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
 								</ul>
 							</li>
 							<li class="nav-dashboard"><a href="javascript:;">Dashboard <i class="fa fa-chevron-down"></i></a>
@@ -230,28 +217,121 @@
             </div>
         </div>
     </header>
-    
-         {% endblock %} 
-         </div>
-          
-         <!-- Header Top END ==== -->
-
-
-
-
-
-
-
-
-
-        
-        {% block body %}
-         
-         {% endblock %} 
-
-
-        {% block footer %}
-         <!-- Footer ==== -->
+    <!-- header END ==== -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <div class="page-banner ovbl-dark" style="background-image:url(assets/images/banner/banner3.jpg);">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">Contact Us 1</h1>
+				 </div>
+            </div>
+        </div>
+		<!-- Breadcrumb row -->
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>Contact Us 1</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Breadcrumb row END -->
+	
+        <!-- inner page banner -->
+        <div class="page-banner contact-page section-sp2">
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-5 col-md-5 m-b30">
+						<div class="bg-primary text-white contact-info-bx">
+							<h2 class="m-b10 title-head">Contact <span>Information</span></h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<div class="widget widget_getintuch">	
+								<ul>
+									<li><i class="ti-location-pin"></i>75k Newcastle St. Ponte Vedra Beach, FL 309382 New York</li>
+									<li><i class="ti-mobile"></i>0800-123456 (24/7 Support Line)</li>
+									<li><i class="ti-email"></i>info@example.com</li>
+								</ul>
+							</div>
+							<h5 class="m-t0 m-b20">Follow Us</h5>
+							<ul class="list-inline contact-social-bx">
+								<li><a href="#" class="btn outline radius-xl"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="btn outline radius-xl"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class="btn outline radius-xl"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="btn outline radius-xl"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-7">
+						<form class="contact-bx ajax-form" action="http://educhamp.themetrades.com/demo/assets/script/contact.php">
+						<div class="ajax-message"></div>
+							<div class="heading-bx left">
+								<h2 class="title-head">Get In <span>Touch</span></h2>
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+							</div>
+							<div class="row placeani">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<div class="input-group">
+											<label>Your Name</label>
+											<input name="name" type="text" required class="form-control valid-character">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<div class="input-group"> 
+											<label>Your Email Address</label>
+											<input name="email" type="email" class="form-control" required >
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<div class="input-group">
+											<label>Your Phone</label>
+											<input name="phone" type="text" required class="form-control int-value">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<div class="input-group">
+											<label>Subject</label>
+											<input name="subject" type="text" required class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="form-group">
+										<div class="input-group">
+											<label>Type Message</label>
+											<textarea name="message" rows="4" class="form-control" required ></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="form-group">
+										<div class="input-group">
+											<div class="g-recaptcha" data-sitekey="6Lf2gYwUAAAAAJLxwnZTvpJqbYFWqVyzE-8BWhVe" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+											<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<button name="submit" type="submit" value="Submit" class="btn button-md"> Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+            </div>
+		</div>
+        <!-- inner page banner END -->
+    </div>
+    <!-- Content END-->
+    <!-- Footer ==== -->
     <footer>
         <div class="footer-top">
 			<div class="pt-exebar">
@@ -356,142 +436,28 @@
             </div>
         </div>
     </footer>
-    
-         {% endblock %}
-         <!-- Footer END ==== -->
-         <button class="back-to-top fa fa-chevron-up" ></button>
+    <!-- Footer END ==== -->
+    <!-- scroll top button -->
+    <button class="back-to-top fa fa-chevron-up" ></button>
 </div>
-         
-          {% block javascripts %}
-         <!-- External JavaScripts -->
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap/js/popper.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap-select/bootstrap-select.min.js')}}"></script>
-<script src="{{asset('assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js')}}"></script>
-<script src="{{asset('assets/vendors/magnific-popup/magnific-popup.js')}}"></script>
-<script src="{{asset('assets/vendors/counter/waypoints-min.js')}}"></script>
-<script src="{{asset('assets/vendors/counter/counterup.min.js')}}"></script>
-<script src="{{asset('assets/vendors/imagesloaded/imagesloaded.js')}}"></script>
-<script src="{{asset('assets/vendors/masonry/masonry.js')}}"></script>
-<script src="{{asset('assets/vendors/masonry/filter.js')}}"></script>
-<script src="{{asset('assets/vendors/owl-carousel/owl.carousel.js')}}"></script>
-<script src="{{asset('assets/js/functions.js')}}"></script>
-<script src="{{asset('assets/js/contact.js')}}"></script>
-<script src='{{asset('assets/vendors/switcher/switcher.js')}}'></script>
-<!-- Revolution JavaScripts Files -->
-<script src="{{asset('assets/vendors/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-<script src="{{asset('assets/vendors/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
-<script>
-jQuery(document).ready(function() {
-	var ttrevapi;
-	var tpj =jQuery;
-	if(tpj("#rev_slider_486_1").revolution == undefined){
-		revslider_showDoubleJqueryError("#rev_slider_486_1");
-	}else{
-		ttrevapi = tpj("#rev_slider_486_1").show().revolution({
-			sliderType:"standard",
-			jsFileLocation:"assets/vendors/revolution/js/",
-			sliderLayout:"fullwidth",
-			dottedOverlay:"none",
-			delay:9000,
-			navigation: {
-				keyboardNavigation:"on",
-				keyboard_direction: "horizontal",
-				mouseScrollNavigation:"off",
-				mouseScrollReverse:"default",
-				onHoverStop:"on",
-				touch:{
-					touchenabled:"on",
-					swipe_threshold: 75,
-					swipe_min_touches: 1,
-					swipe_direction: "horizontal",
-					drag_block_vertical: false
-				}
-				,
-				arrows: {
-					style: "uranus",
-					enable: true,
-					hide_onmobile: false,
-					hide_onleave: false,
-					tmp: '',
-					left: {
-						h_align: "left",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					},
-					right: {
-						h_align: "right",
-						v_align: "center",
-						h_offset: 10,
-						v_offset: 0
-					}
-				},
-				
-			},
-			viewPort: {
-				enable:true,
-				outof:"pause",
-				visible_area:"80%",
-				presize:false
-			},
-			responsiveLevels:[1240,1024,778,480],
-			visibilityLevels:[1240,1024,778,480],
-			gridwidth:[1240,1024,778,480],
-			gridheight:[768,600,600,600],
-			lazyType:"none",
-			parallax: {
-				type:"scroll",
-				origo:"enterpoint",
-				speed:400,
-				levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
-				type:"scroll",
-			},
-			shadow:0,
-			spinner:"off",
-			stopLoop:"off",
-			stopAfterLoops:-1,
-			stopAtSlide:-1,
-			shuffle:"off",
-			autoHeight:"off",
-			hideThumbsOnMobile:"off",
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			debugMode:false,
-			fallbacks: {
-				simplifyAll:"off",
-				nextSlideOnWindowFocus:"off",
-				disableFocusListener:false,
-			}
-		});
-	}
-});	
-</script>
-        {% endblock %} 
-    </body>
-   
+<!-- External JavaScripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="assets/vendors/counter/waypoints-min.js"></script>
+<script src="assets/vendors/counter/counterup.min.js"></script>
+<script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="assets/vendors/masonry/masonry.js"></script>
+<script src="assets/vendors/masonry/filter.js"></script>
+<script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src='assets/vendors/switcher/switcher.js'></script>
+<script src='../../www.google.com/recaptcha/api.js'></script>
+</body>
+
+
 </html>
-        
-        
-        
-        
-  
-    
-
-     
-
-         
-            
-   
