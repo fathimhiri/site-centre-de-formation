@@ -8,6 +8,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AdminController extends AbstractController
 {
+
+/**
+     * @Route("/admin/dash", name="admindash")
+     */
+    public function dashb(): Response
+    {
+        return $this->render('admin/index.html.twig', [
+            'controller_name' => 'AdminController',
+        ]);
+    }
+
     /**
      * @Route("/admin/addL", name="adminaddL")
      */
@@ -44,15 +55,7 @@ class AdminController extends AbstractController
             'controller_name' => 'AdminController',
         ]);
     }
-    /**
-     * @Route("/admin/dash", name="admindash")
-     */
-    public function dashb(): Response
-    {
-        return $this->render('admin/index.html.twig', [
-            'controller_name' => 'AdminController',
-        ]);
-    }
+    
 
 
 
