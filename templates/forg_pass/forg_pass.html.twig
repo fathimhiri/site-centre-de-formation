@@ -20,8 +20,8 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	<link rel="icon" href="{{asset('assets/images/favicon.ico')}}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}" />
 	
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title>EduChamp : Education HTML Template </title>
@@ -40,7 +40,7 @@
 	<!-- TYPOGRAPHY ============================================= -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/typography.css')}}">
 	
-		<!-- SHORTCODES ============================================= -->
+	<!-- SHORTCODES ============================================= -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/shortcodes/shortcodes.css')}}">
 	
 	<!-- STYLESHEETS ============================================= -->
@@ -57,16 +57,25 @@
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">
-				<div class="error-page">
-					<h3>Ooopps :(</h3>
-					<h2 class="error-title">404</h2>
-					<h5>The Page you were looking for, couldn't be found.</h5>
-					<p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
-					<div class="">
-						<a href="{{ path('site') }}" class="btn m-r5">Preview</a>
-						<a href="{{ path('site') }}" class="btn outline black">Back To Home</a>
+				<div class="heading-bx left">
+					<h2 class="title-head">Forget <span>Password</span></h2>
+					<p>Login Your Account <a href="{{ path('login')}}">Click here</a></p>
+				</div>	
+				<form class="contact-bx">
+					<div class="row placeani">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="input-group">
+									<label>Your Email Address</label>
+									<input name="dzName" type="email" required="" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 m-b30">
+							<button name="submit" type="submit" value="Submit" class="btn button-md">Submit</button>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -86,7 +95,7 @@
 <script src="{{asset('assets/vendors/owl-carousel/owl.carousel.js')}}"></script>
 <script src="{{asset('assets/js/functions.js')}}"></script>
 <script src="{{asset('assets/js/contact.js')}}"></script>
-<script src='{{asset('assets/vendors/switcher/switcher.js')}}'></script>
+<script src="{{asset('assets/vendors/switcher/switcher.js')}}"></script>
 </body>
 
 </html>
