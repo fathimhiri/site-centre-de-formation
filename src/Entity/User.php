@@ -4,11 +4,11 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User
+class User implements PasswordAuthenticatedUserInterface
 {
     /**
      * @ORM\Id
@@ -105,5 +105,12 @@ class User
         $this->Email = $Email;
 
         return $this;
+    }
+      /**
+     * @return string the hashed password for this user
+     */
+    public function getPassword(): string
+    {
+        return $this->password;
     }
 }
