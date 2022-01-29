@@ -10,6 +10,36 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Admin
 {
+
+/**
+     * @ORM\ManyToMany(targetEntity=User::class, inversedBy="ads")
+     */
+    private $users;
+    public function __construct()
+    {
+        $this->users = new ArrayCollection();
+    }
+
+ /**
+     * @return Collection|user[]
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+    public function addUsers(user $user): self
+    {
+        if (!$this->users->contains($tag)) {
+            $this->users[] = $user;
+        }
+        return $this;
+    }
+    public function removeUsers(user $user): self
+    {
+        $this->users->removeElement($user);
+        return $this;
+    }
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

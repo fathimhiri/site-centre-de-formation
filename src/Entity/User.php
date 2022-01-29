@@ -10,6 +10,36 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
  */
 class User implements PasswordAuthenticatedUserInterface
 {
+/**
+     * @ORM\ManyToMany(targetEntity=Admin::class, inversedBy="users")
+     */
+    private $ads;
+    public function __construct()
+    {
+        $this->ads = new ArrayCollection();
+    }
+
+
+/**
+     * @return Collection|ads[]
+     */
+    public function getAds(): Collection
+    {
+        return $this->ads;
+    }
+    public function addAds(admin $ad): self
+    {
+        if (!$this->ads->contains($ad)) {
+            $this->ads[] = $ad;
+        }
+        return $this;
+    }
+    public function removeAds(admin $ad): self
+    {
+        $this->ads->removeElement($ad);
+        return $this;
+    }
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -41,6 +71,11 @@ class User implements PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $Email;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $password;
 
     public function getId(): ?int
     {
@@ -112,5 +147,12 @@ class User implements PasswordAuthenticatedUserInterface
     public function getPassword(): string
     {
         return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
     }
 }
